@@ -4,7 +4,6 @@ $url = $_GET[“url”];
 $html = file_get_html($url);
 
 
-
 $links = array();
 foreach($html->find('h1[class="product-name"]') as $a) {
  $links[] = $a->plaintext;
